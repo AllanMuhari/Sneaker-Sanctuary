@@ -1,22 +1,27 @@
-import React from 'react'
+/** @format */
 
-const Hero = () => {
+import React from "react";
+import { heroapi } from "../../data/data";
+
+const Hero = ({
+  heroapi: { title, subtitle, bntext, img, sociallinks, videos },
+}) => {
   return (
     <div>
-        <div></div>
+      <div></div>
+      <div>
         <div>
-            <div>
-                <h1></h1>
-                <h1></h1>
+          <h1>{title}</h1>
+          <h1>{subtitle}</h1>
 
-                <button></button>
-                <div></div>
-                <div></div>
-            </div>
+          <button>{bntext}</button>
+          <div></div>
+          <div></div>
         </div>
-       <img src='' alt='' className=''></img>
+      </div>
+      <img src={img} alt='' className=''></img>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
