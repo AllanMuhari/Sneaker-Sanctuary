@@ -4,19 +4,23 @@ import React from "react";
 
 const Clips = ({ clip, imgsrc }) => {
   return (
-    <div className='relative h-28 w-32 cursor-pointer'>
+    <div className='relative h-14 lg:h-24 md:h-20 w-16 cursor-pointer transition-all duration-300 lg:w-28 md:w-24'>
       <img
         src={imgsrc}
         alt=''
-        className='inset-0 flex h-full w-full object-cover top-0 left-0 right-0 rounded-xl opacity-100 z-10'
+        className='inset-0 flex h-full w-full object-cover top-0 left-0 right-0 rounded-xl opacity-100 z-10 transition-opacity duration-500'
       ></img>
-      <video autoPlay={true}
+      <div className="grid  items-center">
+
+      </div>
+      <video
+        autoPlay={true}
         loop={true}
         muted={true}
-        className='absolute inset-0 h-full w-full object-cover top-0 left-0 right-0 rounded-xl opacity-0 z-20'
-      
+        playsInline={true}
+        className='absolute top-0 left-0 right-0 flex h-full w-full object-cover opacity-0 z-0 group-hover:opacity-100 group-hover:z-50 rounded-xl'
       >
-        <source src={clip} type='video/mp4' />
+        <source type='video/mp4' src={clip} />
       </video>
     </div>
   );

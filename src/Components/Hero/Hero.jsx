@@ -1,7 +1,6 @@
 /** @format */
-
 import React from "react";
-import Clips from "../Utils/Clips/Clips";
+import Clips from "../Utils/clips/clips";
 import SocialLink from "../Utils/Social/Social";
 const Hero = ({
   heroapi: { title, subtitle, btntext, img, sociallinks, videos },
@@ -25,12 +24,12 @@ const Hero = ({
             >
               {btntext}
             </button>
-            <div className='grid items-center gap-5 md:gap-3 absolute top-[33vh] lg:top-[27vh] left-[11%] xl:left-0 w-auto h-auto'>
+            <div className='flex flex-col items-center gap-2 md:gap-3  top-[33vh] lg:top-[27vh] left-[11%] xl:left-0 w-auto h-auto'>
               {videos?.map((val, i) => (
                 <Clips key={i} imgsrc={val.imgsrc} clip={val.clip} />
               ))}
             </div>
-            <div className='grid items-center absolute top-[33vh] lg:top-[27vh] right-0 gap-3'>
+            <div className='grid items-center  top-[33vh] lg:top-[27vh] right-0 gap-3'>
               {sociallinks?.map((val, i) => (
                 <SocialLink key={i} icon={val.icon} />
               ))}
@@ -40,7 +39,7 @@ const Hero = ({
             <img
               src={img}
               alt='hero-img/img'
-              className='w-auto h-[45vh] lg:h-[35vh] md:h-[31vh] sm:h-[21vh] xsm:h-[19vh] transitions-theme -rotate-[25deg] hover:rotate-0 cursor-pointer object-fill'
+              className='w-auto h-[20vh] lg:h-[35vh] md:h-[31vh]  xsm:h-[19vh] transitions-theme -rotate-[25deg] hover:rotate-0 cursor-pointer object-fill'
             />
           </div>
         </div>
