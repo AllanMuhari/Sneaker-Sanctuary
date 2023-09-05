@@ -8,7 +8,7 @@ const Hero = ({
   // console.log(heroapi)
   return (
     <>
-      <div className='relative h-auto w-auto flex flex-col'>
+      <div className='lg:relative h-auto w-auto flex flex-col'>
         <div className='bg-theme clip-path h-[85vh] lg:h-[75vh] md:h-[65vh] sm:h-[55vh] w-auto absolute top-0 left-0 right-0 opacity-100 z-10'></div>
         <div className='relative opacity-100 z-20 grid items-center justify-items-center nike-container'>
           <div className='grid items-center justify-items-center mt-28 md:mt-24'>
@@ -35,11 +35,11 @@ const Hero = ({
               ))}
             </div>
           </div>
-          <div className='flex items-center'>
+          <div className='flex sm:items-center absolute'>
             <img
               src={img}
               alt='hero-img/img'
-              className='w-auto h-[20vh] lg:h-[35vh] md:h-[31vh]  xsm:h-[19vh] transitions-theme -rotate-[25deg] hover:rotate-0 cursor-pointer object-fill'
+              className='w-auto h-[20vh] lg:h-[35vh] md:h-[31vh]  xsm:h-[19vh] transitions-theme -rotate-[30deg] hover:rotate-0 cursor-pointer object-fill'
             />
           </div>
         </div>
