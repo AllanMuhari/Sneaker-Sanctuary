@@ -5,7 +5,7 @@ import React from 'react';
 const Clips = ({ clip, imgsrc }) => {
   return (
    <>
-      <div className='relative h-20 w-20 rounded-xl overflow-hidden group cursor-pointer transition-all duration-300 lg:w-30 md:w-26  lg:h-30 md:h-26 '>
+      <div className='relative mr-12 h-20 w-20 rounded-xl overflow-hidden group cursor-pointer transition-all duration-300 lg:w-30 md:w-26  lg:h-30 md:h-26 '>
         <img
             src={imgsrc}
             alt="img/clips"
