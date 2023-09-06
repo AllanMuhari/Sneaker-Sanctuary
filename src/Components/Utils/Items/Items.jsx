@@ -6,7 +6,7 @@ import { ShoppingBagIcon } from "@heroicons/react/24/solid";
 const Items = ({ id, color, shadow, title, text, img, btn, rating, price }) => {
   return (
     <div
-      className={`relative bg-gradient-to-b ${color} ${shadow} grid items-center justify-items-center`}
+      className={`relative bg-gradient-to-b ${color} ${shadow} grid items-center justify-items-center py-4 px-5 transition-all duration-700 hover:scale-110 w-full`}
     >
       <div className='grid items-center justify-items-center'>
         <h1 className='text-slate-200 text-base lg:text-xlg md:text-lg font-medium filter drop-shadow'>
@@ -45,7 +45,11 @@ const Items = ({ id, color, shadow, title, text, img, btn, rating, price }) => {
         </div>
       </div>
       <div className=' flex items-center'>
-        <img src={img} alt='' className='' />
+        <img
+          src={img}
+          alt=''
+          className='h-26 w-60 transitions-theme hover:rotate-12'
+        />
       </div>
     </div>
   );
