@@ -2,11 +2,14 @@
 import React from "react";
 import "./App.css";
 import Hero from "./Components/Hero/Hero";
-import { heroapi } from "./data/data";
+import { heroapi ,popularsales,toprateslaes } from "./data/data";
+import Sales from "./Components/Sales/Sales";
 function App() {
   return (
     <div>
       <Hero heroapi={heroapi} />
+      <Sales endpoint ={popularsales}/>
+      <Sales endpoint= {toprateslaes}/>
     </div>
   );
 }
