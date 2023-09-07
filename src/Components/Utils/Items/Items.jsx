@@ -9,19 +9,19 @@ const Items = ({ id, color, shadow, title, text, img, btn, rating, price }) => {
       className={`relative bg-gradient-to-b ${color} ${shadow} grid items-center justify-items-center py-4 px-5 transition-all duration-700 hover:scale-110 w-full`}
     >
       <div className='grid items-center justify-items-center'>
-        <h1 className='text-slate-200 text-base lg:text-xlg md:text-lg font-medium filter drop-shadow'>
+        <h1 className='text-base font-medium text-slate-200 lg:text-xlg md:text-lg filter drop-shadow'>
           {title}
         </h1>
-        <p className='text-slate-200 drop-shadow text-base md:text-lg font-medium'>
+        <p className='text-base font-medium text-slate-200 drop-shadow md:text-lg'>
           {text}
         </p>
-        <div className='flex items-center justify-between w-28 my-2'>
-          <div className='flex items-center bg-white/80  px-1 rounded blur-effect-theme'>
-            <h1 className='text-black text-sm font-medium'>${price}</h1>
+        <div className='flex items-center justify-between my-2 w-28'>
+          <div className='flex items-center px-1 rounded bg-white/80 blur-effect-theme'>
+            <h1 className='text-sm font-medium text-black'>${price}</h1>
           </div>
           <div className='flex items-center gap-1'>
-            <StarIcon className='icon-style w-5 h-5 md:w-4 md:h-4' />
-            <h1 className='md:text-sm font-normal text-slate-100'>{rating}</h1>
+            <StarIcon className='w-5 h-5 icon-style md:w-4 md:h-4' />
+            <h1 className='font-normal md:text-sm text-slate-100'>{rating}</h1>
           </div>
         </div>
 
@@ -34,7 +34,7 @@ const Items = ({ id, color, shadow, title, text, img, btn, rating, price }) => {
           </button>
           <button
             type='button'
-            className='bg-white/90 blur-effect-theme button-theme px-2 py-1 shadow shadow-sky-200 text-sm text-black'
+            className='px-2 py-1 text-sm text-black shadow bg-white/90 blur-effect-theme button-theme shadow-sky-200'
             onClick={() => {
               onAddToCart();
               onCartToggle();
@@ -44,7 +44,7 @@ const Items = ({ id, color, shadow, title, text, img, btn, rating, price }) => {
           </button>
         </div>
       </div>
-      <div className=' flex items-center'>
+      <div className='flex items-center '>
         <img
           src={img}
           alt=''
