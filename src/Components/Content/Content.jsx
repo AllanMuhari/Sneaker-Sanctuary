@@ -2,11 +2,12 @@
 
 import React from "react";
 
-const Content = ({ endpoint: { title, heading, text, img, btn, url } }) => {
+const Content = ({
+  ifExists,
+  endpoint: { title, heading, text, img, btn, url },
+}) => {
   return (
-    <div
-      className={`flex items-center justify-between flex-col lg:justify-center nike-container`}
-    >
+    <div className='flex flex-col items-center justify-between lg:justify-center lg:flex-row nike-container'>
       <div className='grid items-center w-full max-w-lg lg:max-w-none md:text-center lg:justify-items-center'>
         <h1 className='text-4xl font-bold sm:text-3xl text-gradient'>
           {heading}
@@ -33,7 +34,11 @@ const Content = ({ endpoint: { title, heading, text, img, btn, url } }) => {
         <img
           src={img}
           alt={`img/${heading}`}
-          className={`w-auto object-fill transitions-theme `}
+          className={`w-auto object-fill transitions-theme ${
+            ifExists
+              ? "h-44 lg:h-56 md:h-52 xsm:h-36 rotate-6 hover:-rotate-12"
+              : "h-48 lg:h-64 md:h-60  xsm:h-40 rotate-[19deg] hover:rotate-12"
+          }`}
         />
       </div>
     </div>

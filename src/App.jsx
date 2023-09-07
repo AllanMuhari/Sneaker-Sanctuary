@@ -16,7 +16,7 @@ function App() {
     <div className='flex flex-col gap-16'>
       <Hero heroapi={heroapi} />
       <Sales endpoint={popularsales} ifExists />
-      <Content endpoint={highlight} />
+      <Content endpoint={highlight} ifExists />
       <Sales endpoint={toprateslaes} />
       <Content endpoint={sneaker} />
     </div>
