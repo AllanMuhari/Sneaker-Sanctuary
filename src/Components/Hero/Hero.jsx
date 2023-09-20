@@ -1,6 +1,6 @@
 /** @format */
 import React from "react";
-import Clips from "../Utils/clips/clips";
+import Clips from "../Utils/Clips/Clips";
 import SocialLink from "../Utils/Social/Social";
 const Hero = ({
   heroapi: { title, subtitle, btntext, img, sociallinks, videos },
