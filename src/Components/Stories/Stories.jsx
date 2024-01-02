@@ -11,6 +11,10 @@ const Stories = ({story:{title,news}}) => {
       <Splide>
         {news.map((val, i) => (
           <SplideSlide key={i} className='mb-0.5'>
+          <div>
+            <div><img src='val.img alt={`img/story/${i}`}' className=''/></div>
+            <div></div>
+          </div>
           
           </SplideSlide>
         ))}
