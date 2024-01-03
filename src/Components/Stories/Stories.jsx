@@ -2,6 +2,7 @@ import React from 'react'
 import Title from '../Utils/Title/Title'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
+import { HeartIcon, ClockIcon } from '@heroicons/react/outline'
 
 const Stories = ({story:{title,news}}) => {
   return (
@@ -13,7 +14,20 @@ const Stories = ({story:{title,news}}) => {
           <SplideSlide key={i} className='mb-0.5'>
           <div>
             <div><img src='val.img alt={`img/story/${i}`}' className=''/></div>
-            <div></div>
+            <div>
+              <div>
+                <HeartIcon className=""/>
+                <span>{val.likes}</span>
+              </div>
+              <div>
+                <ClockIcon className=""/>
+                <span>{val.time}</span>
+              </div>
+                  <div>
+                <ClockIcon className=""/>
+                <span>{val.by}</span>
+              </div>
+            </div>
           </div>
           
           </SplideSlide>
