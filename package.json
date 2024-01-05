@@ -10,9 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@heroicons/react": "^2.0.18",
+    "@heroicons/react": "^2.1.1",
+    "@react-icons/all-files": "^4.1.0",
     "@splidejs/react-splide": "^0.7.12",
+    "@types/lodash.truncate": "^4.4.9",
+    "heroicons-react": "^1.4.1",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
+    "react-clock": "^4.6.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1"
   },
