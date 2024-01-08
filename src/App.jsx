@@ -21,7 +21,7 @@ function App() {
       <Content endpoint={highlight} ifExists />
       <Sales endpoint={toprateslaes} />
       <Content endpoint={sneaker} />
-      <Stories story={story}/>
+      <Stories story={story} />
     </div>
   );
 }
