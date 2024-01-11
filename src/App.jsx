@@ -13,6 +13,7 @@ import {
 import Sales from "./Components/Sales/Sales";
 import Content from "./Components/Content/Content";
 import Stories from "./Components/Stories/Stories";
+import Cart from "./Components/Cart/"
 function App() {
   return (
     <div className='flex flex-col gap-16'>
