@@ -1,5 +1,3 @@
-/** @format */
-
 import React from "react";
 import Title from "../Utils/Title/Title";
 import Item from "../Utils/Items/Items";
@@ -23,3 +21,4 @@ const Sales = ({ ifExists, endpoint: { title, items } }) => {
 };
 
 export default Sales;
+
